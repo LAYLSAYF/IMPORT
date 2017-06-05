@@ -1,0 +1,12 @@
+mes réponses : 
+
+1) php app/console fuel:import => les données sont persistées dans la BDD "dev-import" #table price.
+2) API REST : cette parte n'est pas encore achévée. 
+			+ avancement: j'ai téléchargé le bundle FOSRestBundle
+			+ paramétrage dans le config.
+			+ Non encore finie.
+
+3) Tests unitaires :
+		Fonction "testFormatPrixMoyen" qui teste la fonction "FormatPrixMoyen"
+		A titre informatif, j'ai installé la biblio. PHPUNIT.
+		cmd : phpunit -c /app

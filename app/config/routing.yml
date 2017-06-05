@@ -1,0 +1,4 @@
+fmi_import:
+    resource: "@FMIImportBundle/Controller/"
+    type:     annotation
+    prefix:   /
