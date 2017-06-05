@@ -10,3 +10,11 @@ mes réponses :
 		Fonction "testFormatPrixMoyen" qui teste la fonction "FormatPrixMoyen"
 		A titre informatif, j'ai installé la biblio. PHPUNIT.
 		cmd : phpunit -c /app
+
+GIT  et COMPOSER => pour installer en local le projet 
+
+- git clone https://github.com/LAYLSAYF/IMPORT.git => recépration des sources 
+- composer install -vvv => installer les bibliothèques ( vendors) ensuite 
+remplir le fichier sensible "parameters.yml" 
+
+
