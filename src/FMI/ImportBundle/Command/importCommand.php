@@ -9,7 +9,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use FMI\ImportBundle\Entity\Price;
 use FMI\ImportBundle\Model\File;
 
-class importCommand extends ContainerAwareCommand
+class ImportCommand extends ContainerAwareCommand
 {
     protected function configure()
     {

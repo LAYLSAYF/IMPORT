@@ -4,7 +4,7 @@ mes réponses :
 2) API REST : cette parte n'est pas encore achévée. 
 			+ avancement: j'ai téléchargé le bundle FOSRestBundle
 			+ paramétrage dans le config.
-			+ Non encore finie.
+			+ creation PricesControlleur et ses actions
 
 3) Tests unitaires :
 		Fonction "testFormatPrixMoyen" qui teste la fonction "FormatPrixMoyen"

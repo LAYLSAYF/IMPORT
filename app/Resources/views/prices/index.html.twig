@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Prices list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Postalcode</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for price in prices %}
+            <tr>
+                <td><a href="{{ path('prices_show', { 'id': price.id }) }}">{{ price.id }}</a></td>
+                <td>{{ price.postalCode }}</td>
+                <td>{{ price.amount }}</td>
+                <td>{{ price.date }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('prices_show', { 'id': price.id }) }}">show</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    
+{% endblock %}

@@ -183,7 +183,6 @@ class File
         return $taille;
     }
 
-    
 	/**
      * @param \float $prix
      *

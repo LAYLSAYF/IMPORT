@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Price</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ price.id }}</td>
+            </tr>
+            <tr>
+                <th>Postalcode</th>
+                <td>{{ price.postalCode }}</td>
+            </tr>
+            <tr>
+                <th>Amount</th>
+                <td>{{ price.amount }}</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>{{ price.date }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('prices_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}

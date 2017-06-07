@@ -9,7 +9,7 @@ use FMI\ImportBundle\Entity\Prices;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/import")
      */
     public function indexAction()
     {
@@ -40,9 +40,10 @@ class DefaultController extends Controller
     		$prices->setPostalCode($donnee[0]);
 			$prices->setAmount($donnee[1]);
     		$prices->setDate($donnee[2]);
-    		$em->persist($prices); 
+            $em->persist($prices);
+            $em->flush();
         }
-        $em->flush();
+        
         return true ;
     }
 
